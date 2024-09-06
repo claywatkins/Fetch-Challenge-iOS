@@ -8,8 +8,8 @@
 import SwiftUI
 
 extension EnvironmentValues {
-    var fetchDesertService: FetchDessertService {
-        get { self[FetchDessertServiceKey.self] }
-        set { self[FetchDessertServiceKey.self] = newValue }
+    var desertService: DessertService {
+        get { self[DessertServiceKey.self] }
+        set { self[DessertServiceKey.self] = newValue }
     }
 }
