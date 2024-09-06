@@ -7,6 +7,6 @@
 
 import SwiftUI
 
-struct FetchDessertServiceKey: EnvironmentKey {
-    static var defaultValue = FetchDessertService()
+struct DessertServiceKey: EnvironmentKey {
+    static var defaultValue = DessertService()
 }
