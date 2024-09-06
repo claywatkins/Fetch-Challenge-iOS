@@ -51,8 +51,11 @@
 		0B2B1AC62C8A7C5800F3558B /* FetchiOSChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				0B2B1AC72C8A7C5800F3558B /* FetchiOSChallengeApp.swift */,
-				0B2B1AC92C8A7C5800F3558B /* ContentView.swift */,
+				0B2B1AD92C8A7F9700F3558B /* Views */,
+				0B2B1AD82C8A7F8F00F3558B /* Services */,
+				0B2B1AD72C8A7F8C00F3558B /* Core */,
+				0B2B1AD62C8A7F8800F3558B /* Models */,
+				0B2B1AD52C8A7F8300F3558B /* Extensions */,
 				0B2B1ACB2C8A7C5900F3558B /* Assets.xcassets */,
 				0B2B1ACD2C8A7C5900F3558B /* Preview Content */,
 			);
@@ -65,6 +68,43 @@
 				0B2B1ACE2C8A7C5900F3558B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0B2B1AD52C8A7F8300F3558B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0B2B1AD62C8A7F8800F3558B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0B2B1AD72C8A7F8C00F3558B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0B2B1AC72C8A7C5800F3558B /* FetchiOSChallengeApp.swift */,
+				0B2B1AC92C8A7C5800F3558B /* ContentView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0B2B1AD82C8A7F8F00F3558B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0B2B1AD92C8A7F9700F3558B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
