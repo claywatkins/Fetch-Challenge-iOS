@@ -8,10 +8,11 @@
 import Foundation
 
 @Observable
-class FetchDessertService {
+class DessertService {
     var isLoading = false
     var meals: [Dessert] = []
     var dessert: Dessert?
+    var ingredients: [String: String] = [:]
     var fetchAllURL = URL(string: "https://themealdb.com/api/json/v1/1/filter.php?c=Dessert")!
     var fetchDetailURLString = "https://themealdb.com/api/json/v1/1/lookup.php?i="
     
@@ -43,6 +44,7 @@ class FetchDessertService {
             let meal = try JSONDecoder().decode(Meals.self, from: data)
             
             if let dessert = meal.meals.first {
+                filterDeadIngredients(dessert: dessert)
                 self.dessert = dessert
             }
         } catch {
@@ -51,8 +53,8 @@ class FetchDessertService {
         }
     }
     
-    private func filterDeadIngredients(dessert: Dessert) -> [String: String?]{
-        var ingredients = [
+    func filterDeadIngredients(dessert: Dessert) {
+        let ingredients = [
             dessert.strIngredient1,
             dessert.strIngredient2,
             dessert.strIngredient3,
@@ -74,8 +76,10 @@ class FetchDessertService {
             dessert.strIngredient19,
             dessert.strIngredient20,
         ].filter( { $0 != "" })
+            .compactMap { $0 }
+            .removeDuplicates()
         
-        var measurements = [
+        let measurements = [
             dessert.strMeasure1,
             dessert.strMeasure2,
             dessert.strMeasure3,
@@ -97,8 +101,10 @@ class FetchDessertService {
             dessert.strMeasure19,
             dessert.strMeasure20,
         ].filter( { $0 != "" })
+            .compactMap { $0 }
+            .removeDuplicates()
         
         let final = Dictionary(uniqueKeysWithValues: zip(ingredients, measurements))
-        return final
+        self.ingredients = final
     }
 }
