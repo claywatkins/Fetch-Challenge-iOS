@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct FetchiOSChallengeApp: App {
+    @State var fetchDessertService = FetchDessertService()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DessertHomeView()
+                .environment(fetchDessertService)
         }
     }
 }
