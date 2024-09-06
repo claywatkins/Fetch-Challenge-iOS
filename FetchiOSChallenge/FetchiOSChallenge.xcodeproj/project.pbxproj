@@ -88,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				0B2B1AC72C8A7C5800F3558B /* FetchiOSChallengeApp.swift */,
-				0B2B1AC92C8A7C5800F3558B /* ContentView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -103,6 +102,7 @@
 		0B2B1AD92C8A7F9700F3558B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0B2B1AC92C8A7C5800F3558B /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
