@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct DessertHomeView: View {
+    @Environment(\.fetchDesertService) var fetchDessertService
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            if fetchDessertService.isLoading {
+                ProgressView("Loading Desserts...")
+            } else {
+                List(fetchDessertService.meals, id: \.idMeal) { dessert in
+                    Text(dessert.strMeal)
+                }
+            }
+        }
+        .navigationTitle("Desserts")
+        .task {
+            if let _ = try? await fetchDessertService.fetchAll() {
+                
+            }
+        }
     }
 }
 
