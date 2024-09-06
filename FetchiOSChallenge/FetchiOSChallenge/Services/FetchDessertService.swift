@@ -15,7 +15,7 @@ class FetchDessertService {
     var fetchDetailURL = URL(string: "https://themealdb.com/api/json/v1/1/lookup.php?i=")!
     
     // Fetch All Deserts
-    func fetchAll() async throws {
+    func fetchAll() async {
         DispatchQueue.main.async {
             self.isLoading = true
         }
