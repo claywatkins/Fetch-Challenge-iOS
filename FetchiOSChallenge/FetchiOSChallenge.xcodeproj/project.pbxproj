@@ -12,11 +12,12 @@
 		0B2B1ACF2C8A7C5900F3558B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2B1ACE2C8A7C5900F3558B /* Preview Assets.xcassets */; };
 		0B2B1ADB2C8A805900F3558B /* DessertHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B1ADA2C8A805900F3558B /* DessertHome.swift */; };
 		0B2B1ADD2C8A806700F3558B /* DessertDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B1ADC2C8A806700F3558B /* DessertDetail.swift */; };
-		0B2B1ADF2C8A807100F3558B /* FetchDessertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B1ADE2C8A807100F3558B /* FetchDessertService.swift */; };
+		0B2B1ADF2C8A807100F3558B /* DessertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B1ADE2C8A807100F3558B /* DessertService.swift */; };
 		0B2B1AE12C8A81D200F3558B /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B1AE02C8A81D200F3558B /* Meals.swift */; };
 		0B2B1AE32C8A81F400F3558B /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B1AE22C8A81F400F3558B /* Dessert.swift */; };
-		0B2B1AE52C8A892700F3558B /* FetchDessertServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B1AE42C8A892700F3558B /* FetchDessertServiceKey.swift */; };
+		0B2B1AE52C8A892700F3558B /* DessertServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B1AE42C8A892700F3558B /* DessertServiceKey.swift */; };
 		0B2B1AE72C8A897700F3558B /* EnvironmentValues+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B1AE62C8A897700F3558B /* EnvironmentValues+Ext.swift */; };
+		0B2B1AEF2C8AB10D00F3558B /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B1AEE2C8AB10D00F3558B /* Array+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +27,12 @@
 		0B2B1ACE2C8A7C5900F3558B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B2B1ADA2C8A805900F3558B /* DessertHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertHome.swift; sourceTree = "<group>"; };
 		0B2B1ADC2C8A806700F3558B /* DessertDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetail.swift; sourceTree = "<group>"; };
-		0B2B1ADE2C8A807100F3558B /* FetchDessertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDessertService.swift; sourceTree = "<group>"; };
+		0B2B1ADE2C8A807100F3558B /* DessertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertService.swift; sourceTree = "<group>"; };
 		0B2B1AE02C8A81D200F3558B /* Meals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meals.swift; sourceTree = "<group>"; };
 		0B2B1AE22C8A81F400F3558B /* Dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
-		0B2B1AE42C8A892700F3558B /* FetchDessertServiceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDessertServiceKey.swift; sourceTree = "<group>"; };
+		0B2B1AE42C8A892700F3558B /* DessertServiceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertServiceKey.swift; sourceTree = "<group>"; };
 		0B2B1AE62C8A897700F3558B /* EnvironmentValues+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Ext.swift"; sourceTree = "<group>"; };
+		0B2B1AEE2C8AB10D00F3558B /* Array+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				0B2B1AE62C8A897700F3558B /* EnvironmentValues+Ext.swift */,
+				0B2B1AEE2C8AB10D00F3558B /* Array+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -103,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				0B2B1AC72C8A7C5800F3558B /* FetchiOSChallengeApp.swift */,
-				0B2B1AE42C8A892700F3558B /* FetchDessertServiceKey.swift */,
+				0B2B1AE42C8A892700F3558B /* DessertServiceKey.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -111,7 +114,7 @@
 		0B2B1AD82C8A7F8F00F3558B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0B2B1ADE2C8A807100F3558B /* FetchDessertService.swift */,
+				0B2B1ADE2C8A807100F3558B /* DessertService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -195,12 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B2B1ADF2C8A807100F3558B /* FetchDessertService.swift in Sources */,
+				0B2B1ADF2C8A807100F3558B /* DessertService.swift in Sources */,
 				0B2B1ADB2C8A805900F3558B /* DessertHome.swift in Sources */,
 				0B2B1ADD2C8A806700F3558B /* DessertDetail.swift in Sources */,
-				0B2B1AE52C8A892700F3558B /* FetchDessertServiceKey.swift in Sources */,
+				0B2B1AE52C8A892700F3558B /* DessertServiceKey.swift in Sources */,
 				0B2B1AC82C8A7C5800F3558B /* FetchiOSChallengeApp.swift in Sources */,
 				0B2B1AE32C8A81F400F3558B /* Dessert.swift in Sources */,
+				0B2B1AEF2C8AB10D00F3558B /* Array+Ext.swift in Sources */,
 				0B2B1AE12C8A81D200F3558B /* Meals.swift in Sources */,
 				0B2B1AE72C8A897700F3558B /* EnvironmentValues+Ext.swift in Sources */,
 			);
