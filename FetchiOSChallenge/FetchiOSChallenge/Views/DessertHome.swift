@@ -12,19 +12,19 @@ struct DessertHomeView: View {
     
     var body: some View {
         NavigationView {
-            if fetchDessertService.isLoading {
-                ProgressView("Loading Desserts...")
-            } else {
-                List(fetchDessertService.meals, id: \.idMeal) { dessert in
-                    Text(dessert.strMeal)
+            VStack {
+                if fetchDessertService.isLoading {
+                    ProgressView("Loading Desserts...")
+                } else {
+                    List(fetchDessertService.meals, id: \.idMeal) { dessert in
+                        Text(dessert.strMeal)
+                    }
                 }
             }
+            .navigationTitle("Desserts")
         }
-        .navigationTitle("Desserts")
-        .task {
-            if let _ = try? await fetchDessertService.fetchAll() {
-                
-            }
+        .task{
+            await fetchDessertService.fetchAll()
         }
     }
 }
